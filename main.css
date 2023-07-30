@@ -1,0 +1,594 @@
+/* CSS RESET */
+
+html, body, div, span, applet, object, iframe,
+h1,h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0; 
+	font-family: 'Open Sans', sans-serif;
+	vertical-align: baseline;
+}  
+/* HTML5 display-role reset for older browsers */
+ article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+
+
+
+
+/* NAVBAR AND HERO IMAGE */
+
+body, html {
+    height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/img1.jpg");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text h1 {
+  font-size: 80px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.hero-image p {
+    font-size: 25px;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: transparent;
+    color: #fff; 
+    padding: 10px;
+}
+
+.left-link {
+    margin-top: 20px;
+    color: inherit; 
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 800;
+    transition: color 0.3s ease-in-out;
+}
+
+.left-link:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.right-links {
+    display: flex;
+}
+
+.right-links a {
+    color: inherit; 
+    margin-top: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 15px;
+    transition: color 0.3s ease-in-out;
+    text-transform: uppercase;
+
+}
+
+.right-links a:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+
+
+/* MAIN CONTENT */
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .one, .two, .three, .four {
+    width: 40%; 
+    margin-bottom: 30px; 
+ }
+
+section h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 26px;
+    margin-bottom: 20px;
+    font-weight:lighter;
+    letter-spacing: 1px;
+}
+
+.small_p {
+    font-size: 18px;
+    color: #666;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+section hr {
+    width: 765px;
+    border-color: rgba(175, 165, 165, 0.24);
+    margin-bottom: 40px;
+}
+
+.end {
+    width: 100%;
+    border-color: rgba(175, 165, 165, 0.24);
+}
+
+div.one a,
+div.two a,
+div.three a,
+div.four a {
+  text-decoration: none;
+  color: inherit;
+}
+
+div.one a:hover,
+div.two a:hover,
+div.three a:hover,
+div.four a:hover {
+  color: #0085A1;
+}
+
+/* BUTTON */
+
+.btn {
+    color: #fff;
+    background-color: #0085A1;
+    border: 1px solid #0085A1;
+    padding: 20px 30px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.btn:hover {
+    background-color: #007189;
+    border-color: #006a81;
+  }
+  
+  /* Butonun active durumu */
+  .btn:active {
+    background-color: #006a81;
+    border-color: #006479;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  }
+  
+  /* Butonun devre dışı durumu */
+  .btn:disabled {
+    background-color: #0085A1;
+    border-color: #0085A1;
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+
+ .btn1 {
+    width: 40%;
+    text-align: right;
+ } 
+
+ .fa-solid {
+  width: 20px;
+ }
+
+
+ /* FOOTER */
+
+ footer {
+    text-align: center;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  footer li {
+    display: inline-block;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding: 15px;
+  }
+  
+  .fa-square-twitter,
+  .fa-square-facebook,
+  .fa-square-github {
+    font-size: 50px; 
+  }
+
+
+  ul li a {
+    color: inherit; 
+    text-decoration: none; 
+    font-size: 24px; 
+  }
+  
+  ul li a:hover {
+    color: #0085A1; 
+  }
+
+  /* ! PAGE 2 - ABOUT
+
+  /* The hero image */
+.hero-image2 {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/img3.jpg");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+
+/* Place text in the middle of the image */
+.hero-text2 {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text2 h1 {
+  font-size: 80px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.hero-image2 p {
+    font-size: 25px;
+}
+
+/* ! PAGE 2 - MAIN SECTION */
+
+.section2 {
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+}
+
+.section2 div {
+  width: 35%;
+}
+.section2 div p {
+  margin-bottom: 50px;
+  font-size: 20px;
+  color: black;
+  line-height: 30px;
+  letter-spacing: 0.1px;
+}
+
+/* ! PAGE 3 */
+
+  /* The hero image */
+  .hero-image3 {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/img6.jpg");
+  
+    /* Set a specific height */
+    height: 75%;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  
+  }
+  
+  /* Place text in the middle of the image */
+  .hero-text3 {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  
+  .hero-text3 h1 {
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 30px;
+  }
+  .hero-image3 p {
+    font-size: 30px;
+  }
+
+  /* ! PAGE 3 - MAIN CONTENT */
+   
+  .section3 {
+    display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+  
+  }
+  
+  .section3 div {
+    width: 35%;
+  }
+  
+  .section3 .page3one p {
+    margin-bottom: 50px;
+    font-size: 20px;
+    color:rgb(0, 0, 0);
+    line-height: 30px;
+  }
+
+  .section3 .page3three p {
+    margin-bottom: 50px;
+    font-size: 20px;
+    color:rgb(0, 0, 0);
+    line-height: 30px;
+  }
+
+  .section3 .page3four p {
+    margin-bottom: 30px;
+    font-size: 20px;
+    color:rgb(0, 0, 0);
+    line-height: 30px;
+  }
+ 
+  .page3four img {
+    width: 690px;
+    height: 458px;
+    margin-bottom: 10px;
+  }
+  .for_p {
+    font-style: italic;
+    font-size: 14px;
+    margin-bottom: 35px;
+  }
+
+  .section3 .page3five p {
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: #000000;
+    line-height: 30px;
+  }
+
+  .section3 .page3five a {
+    color: black;
+    font-weight: 600;
+    
+  }
+
+  .section3 .page3five a:hover {
+    color: #0085A1;
+  }
+
+  /* ! PAGE 4 */
+
+    /* The hero image */
+    .hero-image4 {
+      /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/img5.jpg");
+    
+      /* Set a specific height */
+      height: 50%;
+    
+      /* Position and center the image to scale nicely on all screens */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    
+    }
+    
+    /* Place text in the middle of the image */
+    .hero-text4 {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+    }
+    
+    .hero-text4 h1 {
+      font-size: 75px;
+      font-weight: 900;
+      margin-bottom: 20px;
+    }
+    .hero-image4 p {
+      font-size: 25px;
+    }
+
+    /* ! PAGE 4 - SECTION */
+
+    main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .container {
+      display: flex;
+      justify-content: center;
+      max-width: 900px;
+      margin-top: 50px;
+    }
+
+    .form1 {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 50px auto;
+      
+    } 
+    
+    .contact-form {
+      width: 500px;
+    }
+    
+    .contactme {
+    margin-bottom: 90px;
+    font-size: 20px;
+    color:rgb(0, 0, 0);
+    line-height: 30px;
+    }
+    
+    .label {
+      width: 600px;
+    }
+
+
+   .form-group {
+      width: 600px;
+      margin-bottom: 20px;
+     
+  }
+  
+  .form-group label {
+      font-weight: bold;
+      color: #666;
+      margin-bottom: 5px;
+      text-align: left;
+     
+  }
+  
+  .form-group input,
+  .form-group textarea {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      font-size: 16px;
+  }
+  
+  .form-group textarea {
+      resize: vertical;
+  }
+
+
+  /* BUTTON 2 */
+
+ .btn2 {
+  color: #fff;
+  background-color: #0085A1;
+  border: 1px solid #0085A1;
+  padding: 15px 30px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn2:hover {
+  background-color: #007189;
+  border-color: #006a81;
+}
+
+ /* Butonun active durumu */
+ .btn2:active {
+  background-color: #006a81;
+  border-color: #006479;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+} 
+
+/* Butonun devre dışı durumu */
+ .btn2:disabled {
+  background-color: #0085A1;
+  border-color: #0085A1;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+
+
+  
+  
+  
+  
+  
+  
+
+
+ 
+ 
+
+
+
+
+
+
+  
+
